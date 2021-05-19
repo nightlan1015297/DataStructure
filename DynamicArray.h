@@ -1,7 +1,3 @@
-//
-// Created by Dim on 2021/5/19.
-//
-
 #ifndef DATASTRUCTURE_DYNAMICARRAY_H
 #define DATASTRUCTURE_DYNAMICARRAY_H
 
