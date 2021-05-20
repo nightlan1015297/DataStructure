@@ -120,13 +120,3 @@ template <typename T>
 void Array<T>::addFirst(T data) {
     add(0,data);
 }
-
-
-inline ostream& operator<< (ostream &os,Array<int>& arr) {
-    os<<"Array Capacity :"<<arr.getCapacity()<<", Array Size :" << arr.getSize()<<endl;
-    os<<"[";
-    for (int i = 0 ; i<arr.getSize()-1;i++){
-        os<<arr.get(i)<<",";
-    }
-    os<<arr.get(arr.getSize()-1)<<"]"<<endl;
-    return os;}

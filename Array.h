@@ -39,8 +39,14 @@ public:
 
     void addFirst(T data);
 
-    friend ostream& operator <<(ostream &os ,Array<int>& );
-
+    friend ostream & operator <<(ostream& os ,Array<T>& arr){
+        os<<"[";
+        for(int i =0;i<arr.getSize()-1;i++){
+            os<<arr.get(i)<<",";
+        }
+        os<<arr.get(arr.getSize()-1)<<"]";
+        return os;
+    }
 private:
     int capacity;
     int size = 0;
